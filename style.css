@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+body{
+	background: white;
+	background-size: cover;
+}
+
+p, ul{
+	margin: 1% 0;
+	padding-left: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+	color: lightcoral;
+	transform: skew(-10deg);
+	text-shadow: 2px;	
+	box-shadow: 5px 2px 5px rgba(0,0,0,0.5);
+}
+
+header{
+	background: rgba(60, 114, 155, 0.4)
+}
+
+header .container{
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	height: 3em;
+}
+
+.container{
+	width: 90%;
+	margin: 0 5%;
+}
+
+.header-left{
+	font-family: 'Roboto', sans-serif;
+	transform: skew(-25deg,0deg);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.header-right{
+	font-size: 20px;
+	width: 40%;
+}
+
+ul.nav{
+	list-style: none;
+}
+
+ul.nav li{
+	display: inline;
+	margin: 0 2%;
+}
+
+ul.nav li:hover{
+	background: rgb(229, 241, 118);
+}
+
+.content{
+	display: flex;
+}
+
+.octopus-body {
+	position:relative;
+	width:860px;
+	height:200px
+}
+
+.octopus-body p{
+	margin: 0;
+    font-family: Helvetica;
+    font-size: 16px;
+	padding: 9px 0;
+	padding-left: 15%;
+}
+
+.octopus{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+}
+
+.octopus-body__head {
+	background: rgbA(255, 0, 255,0.7) none repeat scroll 0% 0%;
+	width:320px;
+	height:427px;
+	left: 40%;
+	border-radius:0 285px 285px 0;
+	border-right:1px solid hsla(0,0%,100%,.2);
+	z-index: 5;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.octopus-body__field,
+.octopus-body__head {
+	position:absolute;
+	top:0;
+	border-top:1px solid hsla(0,0%,100%,.2)
+}
+
+.octopus-eye{
+	transform: translate(150px, 60px);
+	background: white; 
+	z-index: 6;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.octopus-pupil{
+	transform: translate(35px, 35px);
+	height: 35px;
+	width: 35px;
+	background: black;
+	border-radius: 50%;
+}
+
+.octopus-body__field{
+	height: 38px;
+	right: 300px;
+	border-left:1px solid hsla(0,0%,100%,.2);
+	box-sizing:border-box;
+	border-color: rgba(255,255,255,0.2);
+	border-radius:20px 0 0 20px;
+}
+
+.octopus-body__field:last-child{
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.octopus-body__field-actual{
+	z-index: 3;
+	background: rgbA(255, 0, 255,0.7);
+}
+
+.octopus-body__field-future{
+	z-index: 2;
+	background: rgba(71, 67, 9, 0.7);
+}
+
+.more{
+	position: relative;
+}
+
+table.skill-table{
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(134, 226, 175, 0.4);
+}
+
+.three-skills td{
+	width: 32%;
+}
+
+td{
+	width: 48%;
+	padding: 2%;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+
+.footer{
+	color: rgba(255,255,255,0.7);
+	height: 4%;
+	background: rgba(60, 114, 155, 0.4);
+}
